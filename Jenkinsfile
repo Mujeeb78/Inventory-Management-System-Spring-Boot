@@ -10,6 +10,6 @@ node('Slave'){
          """
    }
    stage ('Email notification'){
-       emailext body: 'Build is passed', subject: 'Build Status', to: 'chaitanyapriya1211@gmail.com'
+       emailext body: 'Build is passed', subject: 'Build Status', to: 'mujeeb9742@gmail.com'
    }
 }
