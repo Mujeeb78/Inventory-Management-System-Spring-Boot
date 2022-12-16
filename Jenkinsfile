@@ -4,7 +4,9 @@ node('Slave') {
     }
 
     stage ('Build'){
-        sh "mvn clean install -Dmaven.test.skip=true"
+        sh """ls -lart
+          mvn clean install 
+         """
     }
 
  
