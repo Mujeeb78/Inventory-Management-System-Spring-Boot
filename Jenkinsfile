@@ -4,7 +4,7 @@ node('Slave') {
     }
 
     stage ('Build'){
-      sh "mvn clean install -Dmaven.test.skip=true"
+      sh "mvn spring-boot:run"
     }
 
  
